@@ -21,7 +21,7 @@
         <div class="title padding">Куда сложнее сделать это правильно!</div>
         <div class="text">Ежедневно в России появляется более 5 000 новых сайтов.<br>И только единицы из них становятся популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем двухдневном <span>БЕСПЛАТНОМ</span> интенсиве!</div>
         <div class="btn-container">
-            <button class="btn">Записаться на интенсив!</button>
+            <button data-modal class="btn">Записаться на интенсив!</button>
         </div>
         <div class="text-info">узнать больше об интенсиве</div>
         <div class="icon-down">
@@ -111,7 +111,7 @@
         <div class="container">
             <img class="gift_icon" src="/src/icons/Rectangle.png" alt="">
             <div class="gift_descr">Для всех участников интенсива предусмотрены бонусы и подарки. Нажимайте на кнопку ниже, принимайте участие в вебинарах и забирайте свой приз по окончании обучения!</div>
-            <button class="gift_btn">Записаться на интенсив!</button>
+            <button data-modal class="gift_btn">Записаться на интенсив!</button>
         </div>
     </section>
     <section class="first">
@@ -125,5 +125,19 @@
     <section class="footer">
         <div class="footer_info"><a class="footer_info" href="#">Служба поддержки  |  Политика конфиденциальности</a><br>Позвоните нам 8-800-555-01-21</div>
     </section>
+    <div class="modal hide">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/src/js/script.js"></script>
 </body>
 </html>
